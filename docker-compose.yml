@@ -31,3 +31,12 @@ services:
       resources:
         limits:
           memory: 500M
+
+x-uffizzi-continuous-preview:
+  share_to_github: false
+  delete_preview_after: 1h
+  tag_pattern: uffizzi_request_*
+  delete_preview_when_image_tag_is_updated: false
+  deploy_preview_when_image_tag_is_created: false
+  delete_preview_when_pull_request_is_closed: true
+  deploy_preview_when_pull_request_is_opened: true
