@@ -1,9 +1,8 @@
 version: "3.9"
 
-x-uffizzi:
-  ingress:
-    service: app
-    port: 80
+x-uffizzi-ingress:
+  service: app
+  port: 80
 
 services:
   app:
