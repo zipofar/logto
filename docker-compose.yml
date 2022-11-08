@@ -9,8 +9,6 @@ services:
     depends_on:
       - "postgres"
     image: nginx
-    ports:
-      - 3001:3001
     environment:
       ALL_YES: 1
       NO_INQUIRY: 0
